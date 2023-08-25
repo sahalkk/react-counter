@@ -19,13 +19,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <button className="button" onClick={this.increment}>
-          +
-        </button>
-        <button className="button" onClick={this.decrement}>
-          -
-        </button>
+      <div className="wrapper">
+        <div className="button-wrap">
+          <button className="button" onClick={this.increment}>
+            +
+          </button>
+          <button className="button" onClick={this.decrement}>
+            -
+          </button>
+        </div>
         <h2>{this.state.count}</h2>
       </div>
     );
